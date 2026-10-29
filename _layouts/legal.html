@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="{{ page.lang }}" dir="{{ page.direction | default: 'ltr' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }}</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin: 0; font: 1rem/1.75 system-ui, sans-serif; overflow-wrap: anywhere; }
+    main { max-width: 52rem; margin: auto; padding: 2rem 1.25rem 4rem; }
+    h1,h2,h3 { line-height: 1.35; }
+    a { color: light-dark(#1856aa, #8bbcff); }
+    li { margin-block: .4rem; }
+    :focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+  </style>
+</head>
+<body><main>{{ content }}</main></body>
+</html>
